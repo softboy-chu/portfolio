@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Okeke Gabriel Chukwuma — Frontend Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <nav>
+    <a href="#" class="logo">CHU</a>
+    <ul class="nav-links">
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#work" class="mobile-link">Work</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <p class="mobile-menu-footer">okekechukwuma88@gmail.com</p>
+  </div>
+
+  <section class="hero">
+    <p class="hero-label">Frontend Developer | Building clean UIs</p>
+    <h1>Building the web<br />with <em>clean code</em></h1>
+    <p>I craft fast, accessible, and beautifully detailed interfaces — turning designs into pixel-perfect,
+      production-ready experiences.</p>
+    <a href="#work" class="btn">View Work</a>
+  </section>
+
+  <section id="work">
+    <p class="section-label">Selected Projects</p>
+    <div class="grid">
+
+      <div class="card">
+        <div class="card-img">
+          <div class="c1">
+            <svg viewBox="0 0 80 80" fill="none">
+              <rect x="10" y="20" width="60" height="40" rx="3" stroke="#3a5ab0" stroke-width="1" />
+              <line x1="10" y1="30" x2="70" y2="30" stroke="#3a5ab0" stroke-width="0.7" />
+              <circle cx="17" cy="25" r="2" fill="#3a5ab0" opacity="0.5" />
+              <circle cx="24" cy="25" r="2" fill="#3a5ab0" opacity="0.5" />
+              <circle cx="31" cy="25" r="2" fill="#3a5ab0" opacity="0.5" /><text x="18" y="46" font-size="7"
+                fill="#3a5ab0" opacity="0.6" font-family="monospace">&lt;App /&gt;</text>
+            </svg>
+          </div>
+        </div>
+        <p class="card-cat">React · Tailwind</p>
+        <p class="card-title">Admin Dashboard</p>
+      </div>
+
+      <div class="card">
+        <div class="card-img">
+          <div class="c2">
+            <svg viewBox="0 0 80 80" fill="none">
+              <rect x="12" y="14" width="56" height="52" rx="2" stroke="#5a4080" stroke-width="1" />
+              <line x1="12" y1="28" x2="68" y2="28" stroke="#5a4080" stroke-width="0.7" />
+              <rect x="20" y="36" width="16" height="22" rx="1" stroke="#5a4080" stroke-width="0.6" />
+              <rect x="44" y="36" width="16" height="10" rx="1" stroke="#5a4080" stroke-width="0.6" />
+              <rect x="44" y="50" width="16" height="8" rx="1" stroke="#5a4080" stroke-width="0.6" />
+            </svg>
+          </div>
+        </div>
+        <p class="card-cat">React · Tailwind</p>
+        <p class="card-title">Haven E-commerce</p>
+      </div>
+
+      <!-- <div class="card">
+        <div class="card-img"><div class="c3">
+          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="26" stroke="#305880" stroke-width="1"/><path d="M40 14 Q54 27 54 40 Q54 53 40 66 Q26 53 26 40 Q26 27 40 14Z" stroke="#305880" stroke-width="0.7" fill="none"/><line x1="14" y1="40" x2="66" y2="40" stroke="#305880" stroke-width="0.7"/></svg>
+        </div></div>
+        <p class="card-cat">Vue.js · Node.js</p>
+        <p class="card-title">Wanderly Travel App</p>
+      </div> -->
+
+      <div class="card">
+        <div class="card-img">
+          <div class="c4">
+            <svg viewBox="0 0 80 80" fill="none">
+              <rect x="10" y="10" width="26" height="26" rx="2" stroke="#406030" stroke-width="1" />
+              <rect x="44" y="10" width="26" height="26" rx="2" stroke="#406030" stroke-width="1" />
+              <rect x="10" y="44" width="26" height="26" rx="2" stroke="#406030" stroke-width="1" />
+              <rect x="44" y="44" width="26" height="26" rx="2" stroke="#406030" stroke-width="0.7"
+                stroke-dasharray="3 2" />
+            </svg>
+          </div>
+        </div>
+        <p class="card-cat">React · CSS Modules</p>
+        <p class="card-title">Nova UI Kit</p>
+      </div>
+
+      <!-- <div class="card">
+        <div class="card-img"><div class="c5">
+          <svg viewBox="0 0 80 80" fill="none"><polyline points="10,60 25,35 38,50 52,22 65,40 70,32" stroke="#803040" stroke-width="1.2" fill="none"/><circle cx="25" cy="35" r="2.5" fill="#803040" opacity="0.6"/><circle cx="38" cy="50" r="2.5" fill="#803040" opacity="0.6"/><circle cx="52" cy="22" r="2.5" fill="#803040" opacity="0.6"/><circle cx="65" cy="40" r="2.5" fill="#803040" opacity="0.6"/></svg>
+        </div></div>
+        <p class="card-cat">D3.js · SVG</p>
+        <p class="card-title">DataVis Dashboard</p>
+      </div>
+
+      <div class="card">
+        <div class="card-img"><div class="c6">
+          <svg viewBox="0 0 80 80" fill="none"><rect x="20" y="10" width="40" height="60" rx="4" stroke="#404880" stroke-width="1"/><rect x="26" y="20" width="28" height="18" rx="1" stroke="#404880" stroke-width="0.7"/><line x1="26" y1="46" x2="54" y2="46" stroke="#404880" stroke-width="0.7"/><line x1="26" y1="53" x2="46" y2="53" stroke="#404880" stroke-width="0.7"/></svg>
+        </div></div>
+        <p class="card-cat">React Native</p>
+        <p class="card-title">Fintrack Mobile</p>
+      </div> -->
+
+    </div>
+  </section>
+
+  <section id="about">
+    <div>
+      <p class="section-label">About</p>
+      <h2>Building the web<br /><em>one component</em><br />at a time</h2>
+      <p>I'm Okeke Gabriel Chukwuma, a frontend developer with 3+ years of experience building performant, accessible
+        websites and design systems for startups and growing teams.</p>
+      <p>I care deeply about clean code, great UX, and the tiny details that make an interface feel right.</p>
+      <div class="stats">
+        <div>
+          <div class="stat-n">4+</div>
+          <div class="stat-l">Years</div>
+        </div>
+        <div>
+          <div class="stat-n">30+</div>
+          <div class="stat-l">Projects</div>
+        </div>
+        <div>
+          <div class="stat-n">12+</div>
+          <div class="stat-l">Clients</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="section-label">Tech Stack</p>
+      <ul class="services-list">
+        <li>React / Next.js <span>→</span></li>
+        <li>TypeScript <span>→</span></li>
+        <!-- <li>Vue.js / Nuxt <span>→</span></li> -->
+        <li>Tailwind CSS <span>→</span></li>
+        <!-- <li>Node.js / REST APIs <span>→</span></li>
+        <li>React Native <span>→</span></li> -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- PRICING  -->
+  <section id="pricing">
+    <p class="section-label">Pricing</p>
+    <div class="pricing-rows">
+
+      <div class="pricing-row">
+        <div>
+          <div class="pricing-row-name">Starter</div>
+          <div class="pricing-row-desc">Single-page site, responsive, up to 3 sections</div>
+        </div>
+        <div class="pricing-row-price">₦150,000 <span>/ project</span></div>
+      </div>
+
+      <div class="pricing-row">
+        <div>
+          <div class="pricing-row-name">Pro</div>
+          <div class="pricing-row-desc">Multi-page app, custom components, CMS integration</div>
+        </div>
+        <div class="pricing-row-price">₦300,000 <span>/ project</span></div>
+      </div>
+
+      <div class="pricing-row">
+        <div>
+          <div class="pricing-row-name">Enterprise</div>
+          <div class="pricing-row-desc">Full-scale app, design system, API integrations</div>
+        </div>
+        <div class="pricing-row-price">Custom</div>
+      </div>
+
+    </div>
+    <p class="pricing-cta">All projects include source code handoff and a 30-day support period. Need something custom?
+      <a href="#contact" style="color:var(--accent);text-decoration:none;">Let's talk →</a>
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Let's build<br /><em>something great</em></h2>
+    <p>Open to freelance projects, contracts, and full-time roles.</p>
+    <a href="mailto:okekechukwuma88@gmail.com" class="email">okekechukwuma88@gmail.com</a>
+    <div class="socials">
+      <a href="https://github.com/softboy-chu">GitHub</a>
+      <a
+        href="https://www.linkedin.com/in/okeke-gabriel-871159249/?lipi=urn%3Ali%3Apage%3Ad_flagship3_404%3BF1AYtNd%2FSKa2OqgDH8soIg%3D%3D">LinkedIn</a>
+      <a href="https://x.com/devchu_">Twitter / X</a>
+    </div>
+    <footer>
+      <span>© 2026 Okeke Chukwuma</span>
+      <span>Frontend Developer — Lagos, NG</span>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
