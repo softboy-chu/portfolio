@@ -3,8 +3,10 @@
   publish = "dist"
 
 [build.environment]
-  # Remove the --include=dev flag as it can cause conflicts in some environments
   NODE_VERSION = "22.22.2"
+  # This is the magic line that forces devDependencies to install
+  NPM_FLAGS = "--include=dev" 
+  NODE_ENV = "development"
 
 [[redirects]]
   from = "/*"
