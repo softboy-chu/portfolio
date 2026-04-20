@@ -1,5 +1,10 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "dist"
+
 [build.environment]
-  NPM_FLAGS = "--include=dev"
+  # Remove the --include=dev flag as it can cause conflicts in some environments
+  NODE_VERSION = "22.22.2"
 
 [[redirects]]
   from = "/*"
