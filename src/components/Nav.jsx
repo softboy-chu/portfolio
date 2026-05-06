@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 
 const NAV_LINKS = ['pricing', 'work', 'about', 'contact']
 
-/* ── Dark-mode icon ────────────────────────────── */
+/* Dark-mode icon */
 function DarkIcon({ dark }) {
   return dark ? (
     /* Sun */

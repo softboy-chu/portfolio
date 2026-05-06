@@ -8,7 +8,6 @@ export default function Hero() {
       ref={ref}
       className="px-[60px] pt-[100px] pb-[80px] max-w-[800px] max-md:px-6 max-md:pt-16 max-md:pb-14"
     >
-      {/* Availability badge */}
       <div className="inline-flex items-center gap-2 border border-green-400 text-green-600 dark:text-green-400 px-3 py-1 mb-8 text-[0.68rem] tracking-[0.12em] uppercase">
         <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
         Available for projects — 2026

@@ -59,9 +59,9 @@ const PROJECTS = [
   {
     id: 4,
     from: '#e4e8d8', to: '#c4caa8',
-    cat: 'React · CSS Modules',
-    title: 'Nova UI Kit',
-    href: null,
+    cat: 'React · Tailwind',
+    title: 'Clothing Store',
+    href: 'https://github.com/softboy-chu/clothing-store',
     template: true,
     svg: (
       <svg viewBox="0 0 80 80" fill="none" className="w-full h-full">
@@ -82,7 +82,6 @@ function Card({ project, delay }) {
       className="cursor-pointer group"
       style={{ transitionDelay: `${delay}ms` }}
     >
-      {/* image */}
       <div className="w-full aspect-[4/3] overflow-hidden bg-border mb-4 relative">
         <div
           className="w-full h-full flex items-center justify-center transition-transform duration-500 ease-in-out group-hover:scale-[1.04]"
@@ -90,13 +89,11 @@ function Card({ project, delay }) {
         >
           <div className="w-[40%] h-[40%] opacity-45">{project.svg}</div>
         </div>
-        {/* template badge */}
         {project.template && (
           <span className="absolute top-3 right-3 text-[0.58rem] tracking-[0.1em] uppercase bg-site-text text-bg px-2 py-[3px] font-sans">
             Template
           </span>
         )}
-        {/* case study CTA overlay */}
         {project.href && (
           <div className="absolute inset-0 bg-site-text/0 group-hover:bg-site-text/10 transition-all duration-300 flex items-end justify-end p-3">
             <span className="text-[0.6rem] tracking-[0.1em] uppercase bg-accent text-white px-2 py-[3px] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -125,7 +122,7 @@ export default function Work() {
         Selected Projects
       </p>
 
-      <div className="grid grid-cols-4 gap-7 max-[900px]:grid-cols-2 max-[480px]:grid-cols-1">
+      <div className="grid grid-cols-3 gap-7 max-[900px]:grid-cols-2 max-[480px]:grid-cols-1">
         {PROJECTS.map((p, i) => (
           <Card key={p.id} project={p} delay={i * 80} />
         ))}

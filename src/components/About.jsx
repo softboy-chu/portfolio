@@ -24,7 +24,6 @@ export default function About() {
         transition-colors duration-300
       "
     >
-      {/* Left — bio + stats */}
       <div ref={leftRef}>
         <p className="text-[0.72rem] tracking-[0.18em] uppercase text-[#666660] mb-12">About</p>
 
@@ -51,7 +50,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* Right — tech stack */}
       <div ref={rightRef} style={{ transitionDelay: '120ms' }}>
         <p className="text-[0.72rem] tracking-[0.18em] uppercase text-[#666660] mb-12">Tech Stack</p>
 
